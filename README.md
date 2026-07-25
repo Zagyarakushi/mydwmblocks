@@ -6,12 +6,6 @@ dwmblocks is a lightweight status bar for dwm that updates information through m
 
 ---
 
-## 📸 Preview
-
-![dwmblocks screenshot](screenshots/dwmblocks.png)
-
----
-
 ## ✨ Features
 
 - Lightweight status bar for dwm
@@ -31,8 +25,6 @@ This build includes custom blocks for:
 - Volume control
 - Battery status
 - Date and time
-
-(Replace this list with your actual blocks.)
 
 ---
 
