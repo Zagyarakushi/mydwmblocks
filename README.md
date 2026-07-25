@@ -1,114 +1,128 @@
-<h1 align="center">
-  <br>
-  <a href="https://gitlab.com/zagyarakushi/mydwmblocks"><img src="" alt="My dwmblocks config"></a>
-</h1>
+# My dwmblocks
 
-<h4 align="center">My dwmblocks config</h4>
+A customised build of dwmblocks with personal configuration and status modules for a minimal, keyboard-driven Linux workflow.
 
-Note: This project was originally pushed to Gitlab and as such, all issues, pull/merge requests and any other disucussion or changes should be made [here](https://gitlab.com/zagyarakushi/mydwmblocks). (In case you are wondering, I have this mirrored on Github so people can follow the project even if they prefer Github. Also it acts as a backup.)
+dwmblocks is a lightweight status bar for dwm that updates information through modular scripts and commands.
 
-[![License](https://img.shields.io/badge/License-MIT-lightgray.svg?style=flat-square)]()
+---
 
+## 📸 Preview
 
-# Table of contents
------------------
+![dwmblocks screenshot](screenshots/dwmblocks.png)
 
-* [Introduction](#introduction)
-* [Installation](#installation)
-* [Usage](#usage)
-* [Known issues and limitations](#known-issues-and-limitations)
-* [Getting help](#getting-help)
-* [Contributing](#contributing)
-* [License](#license)
+---
 
+## ✨ Features
 
-# ⚡ Introduction
-------------
+- Lightweight status bar for dwm
+- Custom status modules
+- Signal-based updates
+- Minimal resource usage
+- Integrated with my dwm workflow
 
-This repository contains my dwmblocks configuration which I use daily.
+---
 
-![screenshot]()
+## 🔧 Status Modules
 
+This build includes custom blocks for:
 
-# 📖 Installation
-------------
+- System information
+- Network status
+- Volume control
+- Battery status
+- Date and time
 
-You will need gcc, make and required libraries which vary distro by distro.
+(Replace this list with your actual blocks.)
 
-#### Void Linux
+---
+
+## 🛠️ Requirements
+
+You need:
+
+- GCC
+- Make
+
+### Void Linux
 
 ```bash
-xbps-install -S gcc make
+sudo xbps-install -S gcc make
 ```
 
-For libraries it could be libX11, libX11-devel, libXft, libXft-devel etc. If the required library is missing then it will show an error and you just need to take the name and find the right package.
+Other distributions may require different package names.
 
-#### Then clone the repository
+---
+
+## 🚀 Installation
+
+Clone the repository:
 
 ```bash
-git clone https://gitlab.com/zagyarakushi/mydwmblocks
+git clone https://gitlab.com/zagyarakushi/mydwmblocks.git
+
+cd mydwmblocks
 ```
 
-
-# 📝 Usage
------
-
-Now go to the directory and compile and install.
-
-#### Compile
+Build:
 
 ```bash
 make
 ```
 
-Then intall dwmblocks
-
-#### Install
+Install:
 
 ```bash
-make install
+sudo make install
 ```
 
-Or just do "make install" which should compile and install at the same time.
+Run:
 
-#### Updating
+```bash
+dwmblocks &
+```
 
-If you make a change and want to update the binary then you need to recompile and install again. Except this time, you need to remove some files.
+---
 
-#### Remove compiled binary and some files
+## ⚙️ Configuration
+
+The main configuration file is:
+
+```
+blocks.def.h
+```
+
+Modify it to customise:
+
+- Commands
+- Update intervals
+- Signals
+- Status formatting
+
+After changing configuration:
 
 ```bash
 make clean
+make
+sudo make install
 ```
 
-#### Delete old configuration files
+---
 
-```bash
-rm config.h
-```
+## 📚 About
 
-Also make sure to delete any other unneeded files as well. Then compile and install.
+This repository contains my personal dwmblocks build used as part of my suckless desktop environment.
 
+The goal is to maintain a lightweight, fast, and informative status bar while following the simplicity of the suckless philosophy.
 
-# ⭐ Known issues and limitations
-----------------------------
+---
 
-This project doesn't have any issues in my opinion but you could create an issue if you want something to change.
+## 🔗 Related Projects
 
+- mydwm
+- mydmenu
 
-# ✌️ Getting help
-------------
+---
 
-You can create an issue and I will try to help you as much as I can.
+## 📄 License
 
-
-# 🔔 Contributing
-------------
-
-First read the code of conduct and contributing file. Then you can fork the repository, add your own stuff and create a pull/merge request.
-
-
-# ⚠ License
--------
-
-MIT
+MIT License
